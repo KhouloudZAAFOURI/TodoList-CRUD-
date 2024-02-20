@@ -1,0 +1,97 @@
+.section{
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+.App-container{
+width: 90%;
+margin: 20px auto;
+}
+
+#header {
+  background-color: purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+
+}
+
+#header #add {
+  padding: 3px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 44px;
+  cursor: pointer;
+  margin-left: auto;
+  border: none;
+
+}
+
+#tasks{
+  border: 5px solid purple;
+  background-color: white;
+}
+
+#task{
+  display: flex;
+  margin: 30px 30px;
+  box-shadow: 3px 5px 15px purple;  
+}
+
+#todo{
+  width: 70%;
+  color: black;
+  font-size: 20px;
+  padding-left: 20px;
+}
+#title{font-weight: bolder; padding-top: 4px;}
+#date {
+  display: flex;
+  gap: 20px;
+}
+#icons{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+#done, #update, #delete {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+#done {background-color: green;}
+#update {background-color: blue;}
+#delete {background-color: red;}
+
+
+@media screen and (429px<width<800px) {
+  #todo {width: 50%;}
+  #icons {width: 50%;}
+}
+
+@media screen and (250px<width<430px) {
+  #task {
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  #todo {
+    width: 100%;
+  }
+  #icons {
+    width: 100%;
+    padding: 0px 30px;
+  } 
+}
